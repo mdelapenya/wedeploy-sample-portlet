@@ -8,4 +8,5 @@
 .settings/
 
 build
+deploy
 .sass-cache
