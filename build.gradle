@@ -35,3 +35,9 @@ jar.doLast {
         into "deploy"
     }
 }
+
+task wedeploy {
+    new File("container.json").write('{\n\t"id": "liferay",\n\t"type": "wedeploy/liferay:beta"\n}')
+}
+
+wedeploy.dependsOn jar
