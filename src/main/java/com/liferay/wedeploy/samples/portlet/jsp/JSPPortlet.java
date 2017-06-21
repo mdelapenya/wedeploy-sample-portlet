@@ -12,7 +12,7 @@
  * details.
  */
 
-package com.liferay.blade.samples.portlet.jsp;
+package com.liferay.wedeploy.samples.portlet.jsp;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
