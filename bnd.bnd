@@ -1,2 +1,4 @@
+Bundle-Name: WeDeploy Sample Portlet
+Bundle-SymbolicName: com.liferay.wedeploy.samples.portlet
 Bundle-Version: 1.0.0
 -sources: true
