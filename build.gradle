@@ -24,3 +24,14 @@ repositories {
 		url "https://cdn.lfrs.sl/repository.liferay.com/nexus/content/groups/public"
 	}
 }
+
+clean.doFirst {
+    delete "${rootDir}/deploy"
+}
+
+jar.doLast {
+    copy {
+        from jar.archivePath
+        into "deploy"
+    }
+}
