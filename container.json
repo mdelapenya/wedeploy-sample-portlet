@@ -2,7 +2,7 @@
 	"id": "liferay",
 	"type": "wedeploy/liferay:beta",
 	"hooks": {
-		"build": "./gradlew clean wedeploy"
+		"build": "./gradlew clean jar"
 	},
 	"storage": "/usr/local/liferay-ce-portal-7.0-ga4"
 }

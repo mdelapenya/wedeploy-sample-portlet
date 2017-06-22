@@ -29,6 +29,10 @@ clean.doFirst {
     delete "${rootDir}/deploy"
 }
 
+build.doLast {
+    configureWedeploy
+}
+
 jar.doLast {
     copy {
         from jar.archivePath
@@ -36,15 +40,13 @@ jar.doLast {
     }
 }
 
-task wedeploy {
+task configureWedeploy {
     new File("container.json").write('''{
 	"id": "liferay",
 	"type": "wedeploy/liferay:beta",
 	"hooks": {
-		"build": "./gradlew clean wedeploy"
+		"build": "./gradlew clean jar"
 	},
 	"storage": "/usr/local/liferay-ce-portal-7.0-ga4"
 }''')
 }
-
-wedeploy.dependsOn jar
