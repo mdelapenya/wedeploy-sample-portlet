@@ -28,3 +28,5 @@ we deploy
 ```
 
 The project will be created in WeDeploy, with the application running there for you!
+
+![Sample WeDeploy Portlet](screenshot.png)
