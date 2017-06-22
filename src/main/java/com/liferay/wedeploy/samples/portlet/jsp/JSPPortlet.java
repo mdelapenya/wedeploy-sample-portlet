@@ -27,7 +27,7 @@ import org.osgi.service.component.annotations.Component;
 	immediate = true,
 	property = {
 		"com.liferay.portlet.css-class-wrapper=portlet-jsp",
-		"com.liferay.portlet.display-category=category.sample",
+		"com.liferay.portlet.display-category=wedeploy.display-category",
 		"com.liferay.portlet.header-portlet-css=/css/main.css",
 		"com.liferay.portlet.instanceable=true",
 		"javax.portlet.display-name=WeDeploy Portlet",
