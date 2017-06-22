@@ -1,5 +1,12 @@
 .portlet-jsp {
-	.redBackground {
-	 background-color: red;
+	h2 {
+		.portlet-title-text {
+			color: #00d46a;
+		}
+	}
+
+	.portlet-content {
+		background-color: #0e141a;
+		color: #ffffff;
 	}
 }

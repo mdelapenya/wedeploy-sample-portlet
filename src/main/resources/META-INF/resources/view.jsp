@@ -17,5 +17,5 @@
 <%@ include file="/init.jsp" %>
 
 <p>
-	<b class="redBackground"><liferay-ui:message key="wedeploy_portlet_JSPPortlet.caption" /></b>
+	<liferay-ui:message key="wedeploy_portlet_JSPPortlet.caption" />
 </p>
