@@ -1,11 +1,11 @@
 .portlet-jsp {
-	h2 {
-		.portlet-title-text {
-			color: #00d46a;
+	.portlet-decorate .portlet-content {
+		h2 {
+			.portlet-title-text {
+				color: #00d46a;
+			}
 		}
-	}
 
-	.portlet-content {
 		background-color: #0e141a;
 		color: #ffffff;
 	}
