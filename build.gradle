@@ -41,12 +41,12 @@ jar.doLast {
 }
 
 task configureWedeploy {
-    new File("container.json").write('''{
-	"id": "liferay",
-	"type": "wedeploy/liferay:beta",
+    new File("container.json").write("""{
+	"id": "$wedeployLiferayServiceName",
+	"type": "$wedeployLiferayImageType",
 	"hooks": {
 		"build": "./gradlew clean jar"
 	},
-	"storage": "/usr/local/liferay-ce-portal-7.0-ga4"
-}''')
+	"storage": "$wedeployStoragePath"
+}""")
 }
